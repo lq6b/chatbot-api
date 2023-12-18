@@ -35,6 +35,7 @@ public class ApiTest {
 
         if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK){
             String res = EntityUtils.toString(response.getEntity());
+            System.out.println("==============================");
             System.out.println(res);
         }else{
             System.out.println(response.getStatusLine().getStatusCode());
